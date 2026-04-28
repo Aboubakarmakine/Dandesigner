@@ -26,6 +26,9 @@ export default function Header() {
           <a href="#studio" className="text-white/85 transition-colors hover:text-[--color-gold]">
             Studio
           </a>
+          <a href="#about" className="text-white/85 transition-colors hover:text-[--color-gold]">
+            About
+          </a>
           <a href="#contact" className="text-white/85 transition-colors hover:text-[--color-gold]">
             Contact
           </a>
