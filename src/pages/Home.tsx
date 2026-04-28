@@ -19,6 +19,12 @@ const pillars = [
   },
 ];
 
+const aboutHighlights = [
+  'Based in Maryland, available worldwide',
+  'Focus: documentary, branded films, and portrait-led storytelling',
+  'Approach: cinematic craft, emotional clarity, and cultural depth',
+];
+
 export default function Home() {
   return (
     <div className="relative overflow-hidden bg-[#040404]">
@@ -134,6 +140,36 @@ export default function Home() {
                   <h4 className="font-serif text-3xl text-white">{cat.title}</h4>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="px-6 py-20 md:px-12">
+        <div className="mx-auto grid max-w-6xl gap-8 border border-white/10 bg-white/[0.02] p-7 md:grid-cols-[1.05fr_0.95fr] md:p-10">
+          <div className="space-y-6">
+            <p className="text-[11px] uppercase tracking-[0.3em] text-[--color-gold]">About</p>
+            <h3 className="font-serif text-4xl leading-tight text-white md:text-6xl">
+              Filmmaking Rooted in Story, Atmosphere, and Human Detail.
+            </h3>
+            <p className="max-w-xl text-sm leading-relaxed text-white/75 md:text-base">
+              I am a filmmaker and visual storyteller crafting cinematic work for artists, brands,
+              and institutions. My process blends documentary sensitivity with polished visual
+              direction to create films that feel timeless and emotionally precise.
+            </p>
+            <a
+              href="#contact"
+              className="inline-block border border-white/30 px-6 py-3 text-[11px] uppercase tracking-[0.25em] text-white transition hover:border-[--color-gold] hover:text-[--color-gold]"
+            >
+              Book a Project
+            </a>
+          </div>
+          <div className="space-y-6 border-t border-white/10 pt-6 md:border-l md:border-t-0 md:pt-0 md:pl-10">
+            {aboutHighlights.map((item) => (
+              <div key={item} className="border-b border-white/10 pb-4">
+                <p className="text-[11px] uppercase tracking-[0.28em] text-white/55">Profile</p>
+                <p className="mt-2 font-serif text-2xl leading-snug text-white/92">{item}</p>
+              </div>
             ))}
           </div>
         </div>
